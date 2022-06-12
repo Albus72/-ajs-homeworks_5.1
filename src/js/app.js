@@ -1,4 +1,5 @@
 /* eslint-disable no-console */
+
 import Bowman from './modules/bowman';
 import Swordsman from './modules/swordsman';
 import Magician from './modules/magician';

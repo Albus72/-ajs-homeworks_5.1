@@ -7,7 +7,7 @@ test('Character name number', () => {
     return new Character(name);
   }
 
-  expect(characterFunc).toThrow('Имя должно быть строкой');
+  expect(characterFunc).toThrow('Тип имени не является строкой');
 });
 
 test('Character name 1 letter', () => {
@@ -17,7 +17,9 @@ test('Character name 1 letter', () => {
     return new Character(name);
   }
 
-  expect(characterFunc).toThrow('Имя менее 2 символов');
+  expect(characterFunc).toThrow(
+    'Минимальная длина имени 2 символа, макимальная до 10',
+  );
 });
 
 test('Character name 11 letters', () => {
@@ -27,7 +29,9 @@ test('Character name 11 letters', () => {
     return new Character(name);
   }
 
-  expect(characterFunc).toThrow('Имя более 10 символов');
+  expect(characterFunc).toThrow(
+    'Минимальная длина имени 2 символа, макимальная до 10',
+  );
 });
 
 test('Character name 11 letters', () => {
