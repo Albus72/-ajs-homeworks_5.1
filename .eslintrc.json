@@ -13,7 +13,10 @@
             "LabeledStatement",
             "WithStatement"
         ],
-        "linebreak-style": ["error", "windows"]
+        "linebreak-style": [
+            "error", 
+            "windows"
+        ]
     },
     "parserOptions": {
         "sourceType": "module"
