@@ -1,13 +1,13 @@
 import Character from '../character';
 
-test('Character name number', () => {
+test('Character name - number', () => {
   const name = 1000;
 
   function characterFunc() {
     return new Character(name);
   }
 
-  expect(characterFunc).toThrow('Тип имени не является строкой');
+  expect(characterFunc).toThrow('Имя не является строкой');
 });
 
 test('Character name 1 letter', () => {
@@ -34,8 +34,9 @@ test('Character name 11 letters', () => {
   );
 });
 
-test('Character name 11 letters', () => {
+test('Character appropriate', () => {
   const values = {
+    type: 'Bowman'
     name: 'ALex',
     health: 100,
     level: 1,
